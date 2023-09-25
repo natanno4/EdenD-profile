@@ -1,6 +1,6 @@
 import React from "react";
 
-import Project from "./project";
+import Project from "./project2";
 
 import INFO from "../../data/user";
 
@@ -12,11 +12,9 @@ const AllProjects = () => {
 			{INFO.projects.map((project, index) => (
 				<div className="all-projects-project" key={index}>
 					<Project
-						logo={project.logo}
+						images={project.images}
 						title={project.title}
 						description={project.description}
-						linkText={project.linkText}
-						link={project.link}
 					/>
 				</div>
 			))}
